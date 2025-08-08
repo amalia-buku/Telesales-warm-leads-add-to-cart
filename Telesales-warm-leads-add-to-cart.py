@@ -169,7 +169,7 @@ with st.sidebar:
     st.divider()
     st.header("Media (optional)")
     # image_url = st.text_input("Image URL (optional)")
-    image_url = "https://raw.githubusercontent.com/christian-buku/Telesales-hot-leads-submitted-form-and-created-payment-link/refs/heads/main/banner.jpg"
+    image_url = "https://raw.githubusercontent.com/amalia-buku/Telesales-warm-leads-add-to-cart/refs/heads/main/banner.jpg"
     # image_filename = st.text_input("Image filename", value="banner.jpg")
     image_filename = "banner.jpg"
 
@@ -178,7 +178,7 @@ with st.sidebar:
     source_mode = st.radio("Choose contact source", ["Google Sheet (public CSV)", "Upload CSV"], index=0)
 
     sheet_id_default = get_secret("SHEET_ID", "")
-    sheet_name_default = get_secret("SHEET_NAME", "hot_created")
+    sheet_name_default = get_secret("SHEET_NAME", "warm_add_to_cart")
 
     if source_mode == "Google Sheet (public CSV)":
         sheet_id = st.text_input("Sheet ID", value=sheet_id_default)
